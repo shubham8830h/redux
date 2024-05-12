@@ -9,9 +9,18 @@ const store = configureStore();
 const App = () => {
   return (
     <Provider store={store}>
-      <div>
-        <AddTodoForm />
-        <TodoList />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <div style={{ textAlign: "center" }}>
+          <AddTodoForm />
+          <TodoList />
+        </div>
       </div>
     </Provider>
   );

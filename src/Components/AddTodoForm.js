@@ -14,14 +14,32 @@ const AddTodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form style={{ marginBottom: "16px" }} onSubmit={handleSubmit}>
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Enter todo title"
+        style={{
+          marginRight: "8px",
+          padding: "8px",
+          borderRadius: "4px",
+          border: "1px solid #ccc",
+        }}
       />
-      <button type="submit">Add Todo</button>
+      <button
+        type="submit"
+        style={{
+          padding: "8px 16px",
+          backgroundColor: "#007bff",
+          color: "#fff",
+          border: "none",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+      >
+        Add Todo
+      </button>
     </form>
   );
 };
