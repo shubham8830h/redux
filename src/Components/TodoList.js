@@ -1,5 +1,4 @@
 import React from "react";
-import "./TodoList.css";
 import { useSelector } from "react-redux";
 import TodoItem from "./TodoItem";
 
